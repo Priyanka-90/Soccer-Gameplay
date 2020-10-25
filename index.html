@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soccer-Game Play</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="./app.js"></script>
 </head>
 <body>
 <div class="container">
@@ -23,9 +24,9 @@
         </div>
         <div class="col">
             <div class="row score">
-            <span id="team-1-score">0</span>
+            <span id="team-1-score"></span>
             <span>-</span>
-            <span id="team-2-score">0</span>
+            <span id="team-2-score"></span>
             </div>
         </div>
         <div class="col">
@@ -42,9 +43,10 @@
         </div>
     </div>
     <div class="row">
-        <button id="try-button">Try Again</button>
-        <button id="strike-button">Strike</button>
+        <button id="try-button" onclick="history.go(0)">Try Again</button>
+        <button id="strike-button" onclick="handleStrikeButtonClick()" ></button>
     </div>
+    <div class="row" ></div>
     <div class="row" id="result" hidden></div>
 </div>
 </body>
